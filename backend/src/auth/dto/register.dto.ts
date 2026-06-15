@@ -3,7 +3,7 @@ import { IsEmail, IsNotEmpty, IsString, MaxLength, MinLength, Matches, IsOptiona
 export class RegisterDto {
   @IsString()
   @IsNotEmpty()
-  @MinLength(20, { message: 'Name must be at least 20 characters long' })
+  @MinLength(5, { message: 'Name must be at least 5 characters long' })
   @MaxLength(60, { message: 'Name cannot be longer than 60 characters' })
   name: string;
 

@@ -1,5 +1,5 @@
 import api from './axios';
-import { Store, PaginatedResponse } from '../types';
+import type { Store, PaginatedResponse } from '../types';
 
 export const storeApi = {
   getAll: (params?: Record<string, any>) =>

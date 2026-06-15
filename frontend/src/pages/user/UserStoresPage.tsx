@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { storeApi } from '../../api/storeApi';
 import { ratingApi } from '../../api/ratingApi';
-import { Store, PaginatedResponse } from '../../types';
+import type { Store, PaginatedResponse } from '../../types';
 import { useSnackbar } from '../../context/SnackbarContext';
 import {
   Box, Typography, TextField, Table, TableBody, TableCell, TableContainer,

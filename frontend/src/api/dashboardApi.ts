@@ -1,5 +1,5 @@
 import api from './axios';
-import { AdminDashboard, StoreOwnerDashboard } from '../types';
+import type { AdminDashboard, StoreOwnerDashboard } from '../types';
 
 export const dashboardApi = {
   getAdminDashboard: () =>

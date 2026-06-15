@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { userApi } from '../../api/userApi';
-import { User, Role } from '../../types';
+import { Role, type User } from '../../types';
 import {
   Box, Card, CardContent, Typography, CircularProgress, Chip, Grid, Button, Divider,
 } from '@mui/material';

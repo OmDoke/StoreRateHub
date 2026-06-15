@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { dashboardApi } from '../../api/dashboardApi';
-import { StoreOwnerDashboard } from '../../types';
+import type { StoreOwnerDashboard } from '../../types';
 import {
   Box, Card, CardContent, Typography, CircularProgress, Grid,
   Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Rating,

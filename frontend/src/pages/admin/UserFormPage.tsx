@@ -88,7 +88,7 @@ const UserFormPage: React.FC = () => {
             <Grid container spacing={2.5}>
               <Grid size={12}>
                 <TextField fullWidth label="Full Name"
-                  {...register('name', { required: 'Name is required', minLength: { value: 20, message: 'Min 20 characters' }, maxLength: { value: 60, message: 'Max 60 characters' } })}
+                  {...register('name', { required: 'Name is required', minLength: { value: 5, message: 'Min 5 characters' }, maxLength: { value: 60, message: 'Max 60 characters' } })}
                   error={!!errors.name} helperText={errors.name?.message}
                   InputProps={{ startAdornment: <InputAdornment position="start"><PersonIcon sx={{ color: 'rgba(0,0,0,0.3)' }} /></InputAdornment> }}
                 />

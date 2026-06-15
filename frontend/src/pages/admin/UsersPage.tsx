@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { userApi } from '../../api/userApi';
-import { User, PaginatedResponse, Role } from '../../types';
+import { Role, type User, type PaginatedResponse } from '../../types';
 import { useSnackbar } from '../../context/SnackbarContext';
 import {
   Box, Typography, Button, TextField, Select, MenuItem, FormControl, InputLabel,

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { dashboardApi } from '../../api/dashboardApi';
-import { AdminDashboard } from '../../types';
+import type { AdminDashboard } from '../../types';
 import {
   Box, Grid, Card, CardContent, Typography, CircularProgress,
 } from '@mui/material';

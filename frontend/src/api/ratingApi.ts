@@ -1,5 +1,5 @@
 import api from './axios';
-import { Rating } from '../types';
+import type { Rating } from '../types';
 
 export const ratingApi = {
   create: (data: { rating: number; storeId: string }) =>

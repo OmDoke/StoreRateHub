@@ -112,7 +112,7 @@ const RegisterPage: React.FC = () => {
               label="Full Name"
               {...register('name', {
                 required: 'Name is required',
-                minLength: { value: 20, message: 'Name must be at least 20 characters' },
+                minLength: { value: 5, message: 'Name must be at least 5 characters' },
                 maxLength: { value: 60, message: 'Name cannot exceed 60 characters' },
               })}
               error={!!errors.name}

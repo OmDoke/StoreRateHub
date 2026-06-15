@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { storeApi } from '../../api/storeApi';
 import { userApi } from '../../api/userApi';
 import { useSnackbar } from '../../context/SnackbarContext';
-import { User, Role } from '../../types';
+import { Role, type User } from '../../types';
 import {
   Box, Card, CardContent, Typography, TextField, Button, MenuItem,
   CircularProgress, InputAdornment, Grid,

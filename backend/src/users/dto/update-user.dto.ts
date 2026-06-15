@@ -4,7 +4,7 @@ import { Role } from '@prisma/client';
 export class UpdateUserDto {
   @IsString()
   @IsOptional()
-  @MinLength(20, { message: 'Name must be at least 20 characters long' })
+  @MinLength(5, { message: 'Name must be at least 5 characters long' })
   @MaxLength(60, { message: 'Name cannot be longer than 60 characters' })
   name?: string;
 
