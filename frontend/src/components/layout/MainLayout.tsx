@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 import { Snackbar, Alert } from '@mui/material';
 import { useSnackbar } from '../../context/SnackbarContext';
 
-const DRAWER_WIDTH = 260;
+const DRAWER_WIDTH = 220;
 
 const MainLayout: React.FC = () => {
   const { snackbar, closeSnackbar } = useSnackbar();
@@ -19,7 +19,7 @@ const MainLayout: React.FC = () => {
         component="main"
         sx={{
           flexGrow: 1,
-          p: 3,
+          p: 2,
           width: `calc(100% - ${DRAWER_WIDTH}px)`,
           ml: `${DRAWER_WIDTH}px`,
         }}

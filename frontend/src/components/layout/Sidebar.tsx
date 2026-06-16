@@ -20,7 +20,7 @@ import StoreIcon from '@mui/icons-material/Store';
 import StarIcon from '@mui/icons-material/Star';
 import LockIcon from '@mui/icons-material/Lock';
 
-const DRAWER_WIDTH = 260;
+const DRAWER_WIDTH = 220;
 
 const Sidebar: React.FC = () => {
   const { user } = useAuth();

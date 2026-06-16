@@ -16,7 +16,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import PersonIcon from '@mui/icons-material/Person';
 import { Role } from '../../types';
 
-const DRAWER_WIDTH = 260;
+const DRAWER_WIDTH = 220;
 
 const getRoleBadge = (role: Role) => {
   const map = {
