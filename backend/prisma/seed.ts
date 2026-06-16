@@ -24,25 +24,25 @@ async function main() {
   // Create Store Owners
   const ownerPassword = await bcrypt.hash('Owner@123', 10);
   const owner1 = await prisma.user.upsert({
-    where: { email: 'john.storeowner@example.com' },
+    where: { email: 'arjun.storeowner@example.com' },
     update: {},
     create: {
-      name: 'John Smith Store Owner',
-      email: 'john.storeowner@example.com',
+      name: 'Arjun Mehta Store Owner',
+      email: 'arjun.storeowner@example.com',
       password: ownerPassword,
-      address: '456 Commerce Blvd, Business District, NY 10001',
+      address: '12 MG Road, Connaught Place, New Delhi 110001',
       role: Role.STORE_OWNER,
     },
   });
 
   const owner2 = await prisma.user.upsert({
-    where: { email: 'jane.storeowner@example.com' },
+    where: { email: 'priya.storeowner@example.com' },
     update: {},
     create: {
-      name: 'Jane Doe Store Owner Person',
-      email: 'jane.storeowner@example.com',
+      name: 'Priya Nair Store Owner Person',
+      email: 'priya.storeowner@example.com',
       password: ownerPassword,
-      address: '789 Market Street, Shopping Center, CA 90001',
+      address: '45 Linking Road, Bandra West, Mumbai 400050',
       role: Role.STORE_OWNER,
     },
   });
@@ -51,37 +51,37 @@ async function main() {
   // Create Normal Users
   const userPassword = await bcrypt.hash('User@1234', 10);
   const user1 = await prisma.user.upsert({
-    where: { email: 'alice.johnson@example.com' },
+    where: { email: 'rahul.sharma@example.com' },
     update: {},
     create: {
-      name: 'Alice Johnson Regular User',
-      email: 'alice.johnson@example.com',
+      name: 'Rahul Sharma Regular User',
+      email: 'rahul.sharma@example.com',
       password: userPassword,
-      address: '321 Residential Ave, Home Town, TX 73301',
+      address: '78 Koramangala, Bengaluru, Karnataka 560034',
       role: Role.USER,
     },
   });
 
   const user2 = await prisma.user.upsert({
-    where: { email: 'bob.williams@example.com' },
+    where: { email: 'sneha.patel@example.com' },
     update: {},
     create: {
-      name: 'Robert Williams Regular User',
-      email: 'bob.williams@example.com',
+      name: 'Sneha Patel Regular User',
+      email: 'sneha.patel@example.com',
       password: userPassword,
-      address: '654 Suburb Lane, Quiet Village, FL 33101',
+      address: '23 CG Road, Navrangpura, Ahmedabad, Gujarat 380009',
       role: Role.USER,
     },
   });
 
   const user3 = await prisma.user.upsert({
-    where: { email: 'charlie.brown@example.com' },
+    where: { email: 'amit.verma@example.com' },
     update: {},
     create: {
-      name: 'Charlie Brown Regular User',
-      email: 'charlie.brown@example.com',
+      name: 'Amit Verma Regular User',
+      email: 'amit.verma@example.com',
       password: userPassword,
-      address: '987 Park Road, Green City, WA 98101',
+      address: '56 Anna Salai, Teynampet, Chennai, Tamil Nadu 600018',
       role: Role.USER,
     },
   });
@@ -92,9 +92,9 @@ async function main() {
     where: { ownerId: owner1.id },
     update: {},
     create: {
-      name: "John's Electronics Hub",
+      name: "Arjun's Electronics Hub",
       email: 'electronics@store.com',
-      address: '100 Tech Avenue, Silicon Valley, CA 94025',
+      address: '15 Nehru Place, New Delhi 110019',
       ownerId: owner1.id,
     },
   });
@@ -103,9 +103,9 @@ async function main() {
     where: { ownerId: owner2.id },
     update: {},
     create: {
-      name: "Jane's Fashion Boutique",
+      name: "Priya's Fashion Boutique",
       email: 'fashion@store.com',
-      address: '200 Style Street, Fashion District, NY 10018',
+      address: '88 Hill Road, Bandra West, Mumbai 400050',
       ownerId: owner2.id,
     },
   });
@@ -143,11 +143,11 @@ async function main() {
   console.log('');
   console.log('📋 Login Credentials:');
   console.log('  Admin:       admin@storeratehub.com / Admin@123');
-  console.log('  Store Owner: john.storeowner@example.com / Owner@123');
-  console.log('  Store Owner: jane.storeowner@example.com / Owner@123');
-  console.log('  User:        alice.johnson@example.com / User@1234');
-  console.log('  User:        bob.williams@example.com / User@1234');
-  console.log('  User:        charlie.brown@example.com / User@1234');
+  console.log('  Store Owner: arjun.storeowner@example.com / Owner@123');
+  console.log('  Store Owner: priya.storeowner@example.com / Owner@123');
+  console.log('  User:        rahul.sharma@example.com / User@1234');
+  console.log('  User:        sneha.patel@example.com / User@1234');
+  console.log('  User:        amit.verma@example.com / User@1234');
 }
 
 main()

@@ -62,11 +62,11 @@ npm run dev
 | Role | Email | Password |
 |------|-------|----------|
 | Admin | admin@storeratehub.com | Admin@123 |
-| Store Owner | john.storeowner@example.com | Owner@123 |
-| Store Owner | jane.storeowner@example.com | Owner@123 |
-| User | alice.johnson@example.com | User@1234 |
-| User | bob.williams@example.com | User@1234 |
-| User | charlie.brown@example.com | User@1234 |
+| Store Owner | arjun.storeowner@example.com | Owner@123 |
+| Store Owner | priya.storeowner@example.com | Owner@123 |
+| User | rahul.sharma@example.com | User@1234 |
+| User | sneha.patel@example.com | User@1234 |
+| User | amit.verma@example.com | User@1234 |
 
 ## Features
 
